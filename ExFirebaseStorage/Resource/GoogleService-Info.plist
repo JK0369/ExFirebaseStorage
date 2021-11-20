@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1052364408684-ltuh0tb5fcl2keb814mq7dgd0lv3vibh.apps.googleusercontent.com</string>
+	<string>265765996694-986bfi3rir9o4b2rteejumneae10r4lk.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1052364408684-ltuh0tb5fcl2keb814mq7dgd0lv3vibh</string>
+	<string>com.googleusercontent.apps.265765996694-986bfi3rir9o4b2rteejumneae10r4lk</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDjDo4YxmfQHKrbLfVm0U2YS0fzsmZcYSA</string>
+	<string>AIzaSyCEgVDlKPcsccOGYMTchy7MQ-VNuoWXZxk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1052364408684</string>
+	<string>265765996694</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.jake.ExFirebaseStorage</string>
 	<key>PROJECT_ID</key>
-	<string>exfirebasetest-ea1f4</string>
+	<string>exrealtimechat</string>
 	<key>STORAGE_BUCKET</key>
-	<string>exfirebasetest-ea1f4.appspot.com</string>
+	<string>exrealtimechat.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1052364408684:ios:3ec8acb2556d0c29131549</string>
+	<string>1:265765996694:ios:7ede8d2ea98c3b1c5ddab7</string>
 </dict>
 </plist>

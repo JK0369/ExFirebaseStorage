@@ -66,7 +66,9 @@ class HomeVC: UIViewController {
         imagePickerButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         downloadImageView.topAnchor.constraint(equalTo: imagePickerButton.topAnchor, constant: 16).isActive = true
-        downloadImageView.centerXAnchor.constraint(equalTo: imagePickerButton.centerXAnchor).isActive = true
+        downloadImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
+        downloadImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
+        downloadImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -120).isActive = true
         
         loadImageFromFirebaseButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -56).isActive = true
         loadImageFromFirebaseButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -77,10 +79,9 @@ class HomeVC: UIViewController {
     }
     
     @objc private func didTapLoadImageFromFirebaseButton() {
-        guard let urlString = UserDefaults.standard.string(forKey: "myImageUrl"),
-              let url = URL(string: urlString) else { return }
+        guard let urlString = UserDefaults.standard.string(forKey: "myImageUrl") else { return }
         
-        FirebaseStorageManager.downloadImage(url: url) { [weak self] image in
+        FirebaseStorageManager.downloadImage(urlString: urlString) { [weak self] image in
             self?.downloadImageView.image = image
         }
     }
@@ -93,10 +94,9 @@ extension HomeVC: UIImagePickerControllerDelegate, UINavigationControllerDelegat
         
         FirebaseStorageManager.uploadImage(image: selectedImage, pathRoot: user.uid) { url in
             if let url = url {
-                UserDefaults.standard.set(url, forKey: "myImageUrl")
+                UserDefaults.standard.set(url.absoluteString, forKey: "myImageUrl")
                 self.title = "이미지 업로드 완료"
             }
-            print("완료 = \(url)")
         }
         
         picker.dismiss(animated: true)

@@ -19,7 +19,7 @@
 		4A0C74E32747FE4600DFCD26 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4A0C74E22747FE4600DFCD26 /* FirebaseFirestore */; };
 		4A0C74E52747FE4600DFCD26 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4A0C74E42747FE4600DFCD26 /* FirebaseFirestoreSwift-Beta */; };
 		4A0C74E72747FE4600DFCD26 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4A0C74E62747FE4600DFCD26 /* FirebaseStorage */; };
-		4A0C74F127482C2500DFCD26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A0C74F027482C2500DFCD26 /* GoogleService-Info.plist */; };
+		4A969D262748AECB00DC2426 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A969D252748AECB00DC2426 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		4A0C74D12747C9C200DFCD26 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4A0C74D32747C9C600DFCD26 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		4A0C74D62747E9D400DFCD26 /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
-		4A0C74F027482C2500DFCD26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A969D252748AECB00DC2426 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +141,7 @@
 		4A0C74C42747B99900DFCD26 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				4A0C74F027482C2500DFCD26 /* GoogleService-Info.plist */,
+				4A969D252748AECB00DC2426 /* GoogleService-Info.plist */,
 				4A0C749A2747B92500DFCD26 /* Assets.xcassets */,
 				4A0C749C2747B92500DFCD26 /* LaunchScreen.storyboard */,
 				4A0C749F2747B92500DFCD26 /* Info.plist */,
@@ -282,7 +282,7 @@
 			files = (
 				4A0C749E2747B92500DFCD26 /* LaunchScreen.storyboard in Resources */,
 				4A0C749B2747B92500DFCD26 /* Assets.xcassets in Resources */,
-				4A0C74F127482C2500DFCD26 /* GoogleService-Info.plist in Resources */,
+				4A969D262748AECB00DC2426 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
